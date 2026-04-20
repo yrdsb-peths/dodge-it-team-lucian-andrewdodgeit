@@ -19,5 +19,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         Baldy baldy = new Baldy();
         addObject(baldy, 100, 100);
+        GreenApple greenapple = new GreenApple();
+        addObject(greenapple, 600, 100);
     }
 }
