@@ -29,8 +29,8 @@ public class Villain extends Actor
             Actor hero = getOneIntersectingObject(Hero.class);
             
             getWorld().addObject(new Defeated(), 300, 200);
-            getWorld().removeObject(this);
             getWorld().removeObject(hero);
+            getWorld().removeObject(this);
         }
     }
     
