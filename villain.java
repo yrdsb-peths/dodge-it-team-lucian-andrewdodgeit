@@ -26,8 +26,11 @@ public class Villain extends Actor
         }
         
         if (isTouching(Hero.class)) {
+            Actor hero = getOneIntersectingObject(Hero.class);
+            
             getWorld().addObject(new Defeated(), 300, 200);
             getWorld().removeObject(this);
+            getWorld().removeObject(hero);
         }
     }
     
